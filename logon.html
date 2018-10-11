@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+</head>
+<body>
+
+<center>
+    <div style="background-color: #61a1bc;width: 50%;height: 260px">
+        <h2>欢迎您的登陆</h2>
+        <form action="{:url('user/logonselect')}" method="post" >
+            <table height="200px">
+                <tr >
+                    <td>用户名</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>密码</td>
+                    <td><input type="password" name="pwd"></td>
+                </tr>
+
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <a href="{:url('user/index')}"><input type="button" value="注册"></a>
+                        <input type="submit" value="登陆">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</center>
+</body>
+</html>
